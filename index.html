@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <section id="mainContainer">
+      <div class="wrapper">
+        <!-------- Top Discount Bar ------>
+
+        <section class="topDiscountBar">
+          <p>
+            FREE delivery & 40% Discount for next 3 orders! Place your 1st order
+            in.
+          </p>
+          <ul class="endOfSaleTime">
+            <li>Until the end of the sale:</li>
+            <li><span>47</span>days</li>
+            <li><span>06</span>hours</li>
+            <li><span>52</span>minutes</li>
+            <li><span>13</span>sec.</li>
+          </ul>
+        </section>
+
+        <!-------- Top Small Nav ------->
+
+        <section id="topSmallNav">
+          <ul class="left">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">My Account</a></li>
+            <li><a href="#">Wishlist</a></li>
+            <hr />
+            <li>We deliver to you every day from <span>7:00 to 23:00</span></li>
+          </ul>
+
+          <ul class="right">
+            <li>
+              <a href="#">
+                <p>English</p>
+                <img src="./assets/grey-down-arrow.png" alt="down-arrow" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <p>USD</p>
+                <img src="./assets/grey-down-arrow.png" alt="down-arrow" />
+              </a>
+            </li>
+            <li>Order Tracking</li>
+          </ul>
+        </section>
+
+        <hr class="bottom-border" />
+
+        <!-------- Search Bar and Results ------>
+
+        <section id="searchBarAndLists">
+          <ul class="left">
+            <li><img src="./assets/grogin-logo.png" alt="grogin-logo" /></li>
+            <li><img src="./assets/location.png" alt="location" /></li>
+            <li>
+              <p>Deliver to</p>
+              <span>all</span>
+            </li>
+          </ul>
+
+          <div class="midSearchInputBox">
+            <input
+              type="text"
+              placeholder="Search for products, categories or brands..."
+            />
+            <img src="./assets/search.png" alt="search" />
+          </div>
+
+          <ul class="right">
+            <li>
+              <a href="#">
+                <img src="./assets/user.png" alt="user" />
+                <span>Account</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./assets/wishlist.png" alt="wishlist" />
+                <span>Wishlist</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./assets/cart.png" alt="cart" />
+                <span>Cart</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <hr class="bottom-border" />
+
+        <!------------- NavBar ------------->
+
+        <section id="navbar">
+          <ul class="left">
+            <li>
+              <a href="#" class="nav-links active">
+                <p>Home</p>
+                <img src="./assets/black-down-arrow.png" alt="down-arrow" />
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-links">
+                <p>Shop</p>
+                <img src="./assets/black-down-arrow.png" alt="down-arrow" />
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-links">
+                <p>Fruits & vegetables</p>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-links">
+                <p>Beverages</p>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-links">
+                <p>Blog</p>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-links">
+                <p>Contact</p>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="right">
+            <li>
+              <a href="#" class="nav-links">
+                <p>Trending Products</p>
+                <img src="./assets/black-down-arrow.png" alt="down-arrow" />
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-links">
+                <p>Almost Finished</p>
+                <img src="./assets/sale.png" class="sale-bar" alt="sale" />
+                <img src="./assets/orange-down-arrow.png" alt="down-arrow" />
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <hr class="bottom-border" />
+
+        <!--------  Widget Price Filter -------->
+
+        <section id="widgetPriceFilterHeading">
+          <div class="left">
+            <p>Widget price filter</p>
+          </div>
+
+          <ul class="right">
+            <li>
+              <a href="#"><img src="./assets/close.png" alt="close" /></a>
+              <p>Clear filters</p>
+            </li>
+            <li>
+              <a href="#"><img src="./assets/close.png" alt="close" /></a>
+              <p>Fruits & Vegetables</p>
+            </li>
+          </ul>
+        </section>
+
+        <section id="mainBody">
+          <section class="left">
+            <ul class="priceRanges">
+              <li>
+                <p>Min price</p>
+                <input type="text" value="0" />
+              </li>
+              <li><p>-</p></li>
+              <li>
+                <p>Max price</p>
+                <input type="text" value="30" />
+              </li>
+            </ul>
+            <div class="rangeInput">
+              <input type="range" class="input-slider" />
+            </div>
+            <ul class="priceAndfilterBtn">
+              <li>
+                <p>Price: $0 — $30</p>
+                <a href="#">Filter</a>
+              </li>
+            </ul>
+
+            <hr class="bottom-border widgetPriceBottomHr" />
+
+            <ul class="productCategories">
+              <p class="productCategoriesHeading">Product Categories</p>
+              <ul>
+                <li>
+                  <input type="checkbox" class="productCategoriesCheckbox"/>
+                  <p>Fruits & Vegetables</p>
+                </li>
+                <li>
+                  <a href="#"><img src="./assets/add.png" alt="add" /></a>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <input type="checkbox" class="productCategoriesCheckbox" />
+                  <p class="productCategoryNames">Baby & Pregnancy</p>
+                </li>
+                <li>
+                  <a href="#"><img src="./assets/add.png" alt="add" /></a>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <input type="checkbox" class="productCategoriesCheckbox" />
+                  <p>Beverages</p>
+                </li>
+                <li>
+                  <a href="#"><img src="./assets/add.png" alt="add" /></a>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <input type="checkbox" class="productCategoriesCheckbox" />
+                  <p>BevMeats & Seafood</p>
+                </li>
+                <li>
+                  <a href="#"><img src="./assets/add.png" alt="add" /></a>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <input type="checkbox" class="productCategoriesCheckbox" />
+                  <p>Biscuits & Snacks</p>
+                </li>
+                <li>
+                  <a href="#"><img src="./assets/add.png" alt="add" /></a>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <input type="checkbox" class="productCategoriesCheckbox" />
+                  <p>Breads & Bakery</p>
+                </li>
+                <li>
+                  <a href="#"><img src="./assets/add.png" alt="add" /></a>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <input type="checkbox" class="productCategoriesCheckbox"  />
+                  <p>Breaksfast & Dairy</p>
+                </li>
+                <li>
+                  <a href="#"><img src="./assets/add.png" alt="add" /></a>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <input type="checkbox" class="productCategoriesCheckbox" />
+                  <p>Frozen Foods</p>
+                </li>
+                <li>
+                  <a href="#"><img src="./assets/add.png" alt="add" /></a>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <input type="checkbox" class="productCategoriesCheckbox" />
+                  <p>Grocery & Staples</p>
+                </li>
+                <li>
+                  <a href="#"><img src="./assets/add.png" alt="add" /></a>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <input type="checkbox" class="productCategoriesCheckbox" />
+                  <p>Healthcare</p>
+                </li>
+                <li>
+                  <a href="#"><img src="./assets/add.png" alt="add" /></a>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <input type="checkbox" class="productCategoriesCheckbox" />
+                  <p>Household Needs</p>
+                </li>
+                <li>
+                  <a href="#"><img src="./assets/add.png" alt="add" /></a>
+                </li>
+              </ul>
+            </ul>
+
+            <hr class="bottom-border widgetPriceBottomHr" />
+
+            <ul class="filterByColor">
+              <p>Filter by Color</p>
+              <ul>
+                <li>
+                  <span class="greenCircle"></span>
+                  <p>Green</p>
+                </li>
+                <li>(1)</li>
+              </ul>
+            </ul>
+
+            <hr class="bottom-border widgetPriceBottomHr" />
+
+            <ul class="filterByBrands">
+              <p>Filter by Brands</p>
+              <ul>
+                <li>
+                  <input type="checkbox" />
+                  <p>Fresh</p>
+                </li>
+                <li>(1)</li>
+              </ul>
+            </ul>
+
+            <hr class="bottom-border widgetPriceBottomHr" />
+
+            <ul class="productStatus">
+              <p>Product Status</p>
+              <ul>
+                <li>
+                  <input type="checkbox" />
+                  <p>In Stock</p>
+                </li>
+                <li>
+                  <input type="checkbox" />
+                  <p>On Sale</p>
+                </li>
+              </ul>
+            </ul>
+          </section>
+
+          <!-- Right side of the main body -->
+
+          <section class="right">
+            <div class="banner">
+              <div class="left">
+                <span>Only This Week</span>
+                <h1>Grocery store with different treasures</h1>
+                <p>
+                  We have prepared special discounts for you on grocery <br />
+                  products...
+                </p>
+                <button>
+                  <p>Shop Now</p>
+                  <a href="#"><img src="./assets/right-arrow.png" alt="" /></a>
+                </button>
+              </div>
+            </div>
+
+            <!-- showing results box -->
+
+            <section class="showingResults">
+              <div class="showingResultsBox">
+                <ul>
+                  <li>Showing all 16 results</li>
+                </ul>
+                <ul>
+                  <li><span>Sort:</span>Sort by latest</li>
+                  <li><hr /></li>
+                  <li><span>Show:</span>20 items</li>
+                  <li>
+                    <a href="#">
+                      <img src="./assets/sortOne.png" alt="sort" />
+                    </a>
+                    <a href="#">
+                      <img src="./assets/sortTwo.png" alt="sort" />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </section>
+
+            <!--------- Results --------->
+
+            <section class="results">
+            </section>
+          </section>
+        </section>
+      </div>
+    </section>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
