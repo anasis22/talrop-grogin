@@ -1,0 +1,26 @@
+[
+  {
+    "id" : 1,
+    "name" : "Green Apple",
+    "price" : "$15.99",
+    "ratingImg" : "./assets/ratingStar.png"
+  },
+  {
+    "id" : 2,
+    "name" : "Organic Banana",
+    "price" : "$15.99",
+    "ratingImg" : "./assets/ratingStar.png"
+  },
+  {
+    "id" : 3,
+    "name" : "Fresh Brocoli",
+    "price" : "$15.99",
+    "ratingImg" : "./assets/ratingStar.png"
+  },
+  {
+    "id" : 4,
+    "name" : "Blackberries",
+    "price" : "$15.99",
+    "ratingImg" : "./assets/ratingStar.png"
+  }
+]
