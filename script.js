@@ -11,9 +11,7 @@ navBtns.forEach((item) => {
     })
 })
 
-
 // -------- CheckBox checked to color change --------
-
 
 const checkBox = document.querySelectorAll('.productCategoriesCheckbox')
 
@@ -28,14 +26,7 @@ checkBox.forEach((item) => {
     })
 })
 
-// json testing
-
-// fetch('./data.json').then((res) => {
-//     res.json()
-//     .then((data) => {
-//         console.log(data)
-//     })
-// })
+// --------
 
 document.addEventListener('DOMContentLoaded', function () {
     const resultContainer = document.querySelector('.results');
@@ -50,10 +41,49 @@ document.addEventListener('DOMContentLoaded', function () {
             data.forEach((el) => {
                 const productCardLists = document.createElement('li')
 
+                // topLi
+                const topLi = document.createElement("li");
+                topLi.className = "topLi"
+                const leftImgTag = document.createElement('img');
+                const rightImgTag = document.createElement('img');
+                leftImgTag.className = 'leftImgTag';
+                rightImgTag.className = 'rightImgTag';
+                leftImgTag.src = './assets/offer-badge.png'
+                rightImgTag.src = './assets/heart.png'
+                topLi.appendChild(leftImgTag);
+                topLi.appendChild(rightImgTag);
+
+                // heart
+                rightImgTag.addEventListener('click',() => {
+                    if (rightImgTag.src.includes('heart.png')) {
+                        rightImgTag.src = './assets/heartRed.png';
+                    } else if (rightImgTag.src.includes('heartRed.png')) {
+                        rightImgTag.src = './assets/heart.png';
+                    }
+                })
+
+                // midLi
+                const midLi = document.createElement("li");
+                midLi.className = "midLi"
+                const midImg = document.createElement('img');
+                midImg.className = "midImg";
+                midImg.src = el.img
+                midLi.appendChild(midImg)
+
+
+                // bottomLi
+                const bottomLi = document.createElement("li");
+                bottomLi.className = "bottom"
+                // const ratingStarImg = document.createElement("img")
+                // ratingStarImg.className = 'ratingStarImg'
+                // ratingStarImg.src = el.ratingStarImg
+                // bottomLi.appendChild('ratingStarImg')
+
                 productCardLists.className = "productCardLists"
 
-                productCardLists.innerHTML = el.name;
-
+                productCardLists.appendChild(topLi)
+                productCardLists.appendChild(midLi)
+                productCardLists.appendChild(bottomLi)
                 productCard.appendChild(productCardLists)
                 resultContainer.appendChild(productCard);
             });

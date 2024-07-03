@@ -1,26 +1,114 @@
 [
   {
     "id" : 1,
-    "name" : "Green Apple",
+    "name" : "Yellow Potatoes",
     "price" : "$15.99",
-    "ratingImg" : "./assets/ratingStar.png"
+    "img" : "./assets/yellow-potatoes.png",
+    "ratingStarImg" : "./assets/ratingStar.png"
   },
   {
     "id" : 2,
-    "name" : "Organic Banana",
+    "name" : "Orange",
     "price" : "$15.99",
-    "ratingImg" : "./assets/ratingStar.png"
+    "img" : "./assets/orange.png",
+    "ratingStarImg" : "./assets/ratingStar.png"
   },
   {
     "id" : 3,
-    "name" : "Fresh Brocoli",
+    "name" : "Strawberries",
     "price" : "$15.99",
-    "ratingImg" : "./assets/ratingStar.png"
+    "img" : "./assets/strawberries.png",
+    "ratingStarImg" : "./assets/ratingStar.png"
   },
   {
     "id" : 4,
+    "name" : "Sliced Strawberries",
+    "price" : "$15.99",
+    "img" : "./assets/sliced-strawberries.png",
+    "ratingStarImg" : "./assets/ratingStar.png"
+  },
+  {
+    "id" : 5,
+    "name" : "Peach",
+    "price" : "$15.99",
+    "img" : "./assets/peach.png",
+    "ratingStarImg" : "./assets/ratingStar.png"
+  },
+  {
+    "id" : 6,
+    "name" : "Organic-Banana",
+    "price" : "$15.99",
+    "img" : "./assets/organic-banana.png",
+    "ratingStarImg" : "./assets/ratingStar.png"
+  },
+  {
+    "id" : 7,
+    "name" : "Garden Spinach",
+    "price" : "$15.99",
+    "img" : "./assets/graden-spinach.png",
+    "ratingStarImg" : "./assets/ratingStar.png"
+  },
+  {
+    "id" : 8,
+    "name" : "Harvest Caramel",
+    "price" : "$15.99",
+    "img" : "./assets/harvest-caramel.png",
+    "ratingStarImg" : "./assets/ratingStar.png"
+  },
+  {
+    "id" : 9,
+    "name" : "Fresh Purple Eggplant",
+    "price" : "$15.99",
+    "img" : "./assets/fresh-purple-eggplant.png",
+    "ratingStarImg" : "./assets/ratingStar.png"
+  },
+  {
+    "id" : 10,
+    "name" : "Fresh Pomegranete",
+    "price" : "$15.99",
+    "img" : "./assets/fresh-pomegranete.png",
+    "ratingStarImg" : "./assets/ratingStar.png"
+  },
+  {
+    "id" : 11,
+    "name" : "Fresh Lemon",
+    "price" : "$15.99",
+    "img" : "./assets/fresh-lemon.png",
+    "ratingStarImg" : "./assets/ratingStar.png"
+  },
+  {
+    "id" : 12,
+    "name" : "Fresh Cauliflower",
+    "price" : "$15.99",
+    "img" : "./assets/fresh-cauliflower.png",
+    "ratingStarImg" : "./assets/ratingStar.png"
+  },
+  {
+    "id" : 13,
+    "name" : "Fresh Broccoli",
+    "price" : "$15.99",
+    "img" : "./assets/fresh-broccoli.png",
+    "ratingStarImg" : "./assets/ratingStar.png"
+  },
+  {
+    "id" : 14,
     "name" : "Blackberries",
     "price" : "$15.99",
-    "ratingImg" : "./assets/ratingStar.png"
+    "img" : "./assets/blackberries.png",
+    "ratingStarImg" : "./assets/ratingStar.png"
+  },
+  {
+    "id" : 15,
+    "name" : "Protein Shake",
+    "price" : "$15.99",
+    "img" : "./assets/protein-shake.png",
+    "ratingStarImg" : "./assets/ratingStar.png"
+  },
+  {
+    "id" : 16,
+    "name" : "Green Apple",
+    "price" : "$15.99",
+    "img" : "./assets/green-apple.png",
+    "ratingStarImg" : "./assets/ratingStar.png"
   }
 ]
