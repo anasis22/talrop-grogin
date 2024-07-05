@@ -949,8 +949,6 @@
   /* background-color: #634c9f; */
   list-style-type: none;
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
   flex-wrap: wrap;
   flex-direction: row;
   border-radius: 8px;
@@ -1087,6 +1085,43 @@
   flex-direction: column;
   padding: 9rem .5rem;
 }
+
+
+/* ------------- Footer --------------- */
+
+#footer{
+  
+}
+
+#footer .top{
+
+}
+
+#footer .top ul{
+
+}
+
+#footer .top ul li h3{
+
+}
+
+#footer .top ul li p{
+
+}
+
+#footer .top ul .rightInputMailBox{
+  
+}
+
+#footer .top ul .rightInputMailBox input{
+  
+}
+
+#footer .top ul .rightInputMailBox button{
+  
+}
+
+
 
 
 

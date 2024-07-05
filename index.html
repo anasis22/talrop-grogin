@@ -76,6 +76,7 @@
           <div class="midSearchInputBox">
             <input
               type="text"
+              id="searchInput"
               placeholder="Search for products, categories or brands..."
             />
             <img src="./assets/search.png" alt="search" />
@@ -210,7 +211,11 @@
               <p class="productCategoriesHeading">Product Categories</p>
               <ul>
                 <li>
-                  <input type="checkbox" class="productCategoriesCheckbox" data-categories="fruits & vegetables" checked />
+                  <input
+                    type="checkbox"
+                    class="productCategoriesCheckbox"
+                    data-categories="fruits & vegetables"
+                  />
                   <p>Fruits & Vegetables</p>
                 </li>
                 <li>
@@ -219,7 +224,7 @@
               </ul>
               <ul>
                 <li>
-                  <input type="checkbox" class="productCategoriesCheckbox" data-categories="baby & pregnancy" checked  />
+                  <input type="checkbox" class="productCategoriesCheckbox" />
                   <p class="productCategoryNames">Baby & Pregnancy</p>
                 </li>
                 <li>
@@ -396,8 +401,35 @@
             <!--------- Results --------->
 
             <section class="results"></section>
-
           </section>
+        </section>
+        <section id="footer">
+          <div class="top">
+            <ul>
+              <li>
+                <h3>Join our newsletter for £10 offs</h3>
+              </li>
+              <li>
+                <p>
+                  Register now to get latest updates on promotions &
+                  coupons.Don’t worry, we not spam!
+                </p>
+              </li>
+            </ul>
+
+            <ul>
+              <li class="rightInputMailBox">
+                <input type="email" id="emailInput" />
+                <button>send</button>
+              </li>
+              <li>
+                <p>
+                  By subscribing you agree to our Terms & Conditions and Privacy
+                  & Cookies Policy.
+                </p>
+              </li>
+            </ul>
+          </div>
         </section>
       </div>
     </section>
