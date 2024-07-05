@@ -22,7 +22,6 @@ checkBox.forEach((item) => {
             element.classList.add('checked-text')
         } else if (!this.checked) {
             element.classList.remove('checked-text')
-
         }
     })
 })
@@ -186,7 +185,6 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         renderProducts(filteredProducts)
-
     }
 
     const checkboxes = document.querySelectorAll('.productCategoriesCheckbox');
@@ -198,7 +196,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const searchInput = document.getElementById('searchInput');
     searchInput.addEventListener('input', filterProducts);
-
 
     fetchProducts()
 

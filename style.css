@@ -1090,36 +1090,79 @@
 /* ------------- Footer --------------- */
 
 #footer{
-  
+  width: 90%;
+  background-color: #16A34A;
 }
 
 #footer .top{
-
+  background-color: #634c9f;
+ display: flex;
+ align-items: center;
+ justify-content: center;
 }
 
 #footer .top ul{
-
+ list-style-type: none;
+ padding: 2rem;
 }
 
-#footer .top ul li h3{
+#footer .top ul li{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ background-color: blueviolet;
+}
 
+
+
+#footer .top ul li h3{
+ font-size:  1.3rem;
 }
 
 #footer .top ul li p{
-
+ font-size: .83rem;
 }
 
 #footer .top ul .rightInputMailBox{
-  
+  width: 60%;
+  position: relative;
 }
 
 #footer .top ul .rightInputMailBox input{
-  
+ width: 100%;
+ border: .5px solid #D1D5DB;
+ outline: none;
+ border-radius: 4px;
+ padding: .5rem;
 }
 
 #footer .top ul .rightInputMailBox button{
-  
+ position: absolute;
+ right: 0px;
+ padding: .55rem;
+ border: none;
+ border-top-right-radius: 4px;
+ border-bottom-right-radius: 4px;
+ background-color: var(--main-color);
 }
+
+#footer .top ul:nth-child(2){
+  width: 25%;
+  background-color: bisque;
+}
+
+#footer .top ul:nth-child(2) li{
+  width: 100%;
+  padding: 0px;
+}
+
+
+#footer .top ul:nth-child(2) li p{
+  font-size: .4rem;
+}
+
+
+
 
 
 
