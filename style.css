@@ -508,7 +508,7 @@
 }
 
 #mainBody .left .rangeInput .input-slider-left[type="range"]{
-  margin-left: -2px;
+  margin-left: -4px;
 }
 
 #mainBody .left .rangeInput .input-slider-right[type="range"]::-webkit-slider-thumb,
