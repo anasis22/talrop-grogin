@@ -199,44 +199,38 @@ document.addEventListener('DOMContentLoaded', function () {
 
     fetchProducts()
 
-    // const filteredProducts = () => {
-    //     const checkedCategories = Array.from(checkBox)
-    //     const filteredCheckedCategories = checkedCategories.filter(checkbox => checkbox.checked)
-    //     console.log(filteredCheckedCategories)
-    //     // console.log(checkedCategories)
-    // }
-
-    // filteredProducts()
-
-    // async function filtering() {
-    //     try {
-    //         const res = await fetch('./data.json');
-    //         const data = await res.json();
-
-    //         data.filter((el) => {
-    //             if (el.name === "Other Products") {
-
-    // const otherProductsCardLi = document.createElement('li');
-    // otherProductsCardLi.className = 'otherProductsCardLi';
-
-    // const otherProductText = document.createElement('p');
-    // otherProductText.className = 'otherProductText';
-    // otherProductText.innerHTML = 'Other Products';
-    // otherProductsCardLi.appendChild(otherProductText);
-
-    //                 console.log(otherProductsCard)
-    //                 otherProductsCard.appendChild(otherProductsCardLi);
-    //                 resultContainer.appendChild(otherProductsCard)
-    //             };
-
-    //         })
-    //     } catch (error) {
-    //         console.error('Error fetching data:', error);
-    //     }
-
-    // }
-
-    // filtering()
+    function initializeCountdown(endDate) {
+        const countdownDays = document.querySelector('.countdownDays');
+        const countdownHours = document.querySelector('.countdownHours');
+        const countdownMinutes = document.querySelector('.countdownMinutes');
+        const countdownSeconds = document.querySelector('.countdownSeconds');
+        
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const distance = endDate - now;
+  
+            if (distance < 0) {
+                clearInterval(interval);
+                countdownElement.innerHTML = "EXPIRED";
+                return;
+            }
+  
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  
+            countdownDays.innerHTML = days;
+            countdownHours.innerHTML = hours;
+            countdownMinutes.innerHTML = minutes;
+            countdownSeconds.innerHTML = seconds;
+        }
+  
+        const interval = setInterval(updateCountdown, 1000);
+        updateCountdown();
+    }
+    const countdownEndDate = new Date('2024-08-01T00:00:00').getTime();
+    initializeCountdown(countdownEndDate);
 
 
 });
