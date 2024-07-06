@@ -170,7 +170,6 @@ document.addEventListener('DOMContentLoaded', function () {
             resultContainer.appendChild(otherProductsCard);
 
         });
-
     }
 
     function filterProducts() {
