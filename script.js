@@ -33,6 +33,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const resultContainer = document.querySelector('.results');
     let allProducts = []
     let filteredProducts;
+    let wishListCount = 0;
+    const wishListCountShow = document.querySelector('.wishListCountShow')
 
     async function fetchProducts() {
         try {
@@ -74,8 +76,12 @@ document.addEventListener('DOMContentLoaded', function () {
             rightImgTag.addEventListener('click', () => {
                 if (rightImgTag.src.includes('heart.png')) {
                     rightImgTag.src = './assets/heartRed.png';
+                    wishListCount += 1
+                    wishListCountShow.innerHTML = wishListCount
                 } else if (rightImgTag.src.includes('heartRed.png')) {
                     rightImgTag.src = './assets/heart.png';
+                    wishListCount -= 1
+                    wishListCountShow.innerHTML = wishListCount
                 }
             })
 
