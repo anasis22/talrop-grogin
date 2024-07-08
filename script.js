@@ -239,3 +239,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 });
+
+// ======== Responsives ===========
+
+window.addEventListener('resize',() => {
+    
+})
