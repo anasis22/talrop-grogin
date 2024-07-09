@@ -272,6 +272,11 @@ menuCloseBtn.addEventListener('click', () => {
 
 window.addEventListener('resize',() => {
     const resize = window.innerWidth
+    const body = document.body
+
+    if(body.scrollWidth > window.innerWidth){
+        body.style.width = '100vw'
+    }
 
     // menu
 

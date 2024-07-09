@@ -5,6 +5,15 @@
   font-family: "Inter", sans-serif;
 }
 
+html,
+body{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
 :root {
   --main-color: #634c9f;
   --link-grey-color: #6b7280;
@@ -12,9 +21,9 @@
   --border-color: #e5e7eb;
 }
 
+
 #mainContainer {
   width: 100vw;
-  height: 100vh;
   background-color: var(--main-bg-color);
 }
 
@@ -1636,14 +1645,6 @@
     font-size: 0.7rem;
   }
 
-  #mainBody .right .showingResults .showingResultsBox ul li {
-    font-size: 0.6rem;
-  }
-
-  #mainBody .right .showingResults .showingResultsBox ul li a img {
-    width: 1rem;
-  }
-
 
   /* ----------- showing results for mobile view ---------- */
 
@@ -1832,186 +1833,3 @@
 
 /* ---------------------------- */
 
-
-@media screen and (max-width: 400px){
-    /* ---------- Menu ----------- */
-
-  /* top */
-
-  #menu {
-    width: 100%;
-    height: 100%;
-    background-color: white;
-    transition: transform 0.5s ease;
-    position: fixed;
-    top: 0;
-    transform: translateX(-100%);
-    z-index: 1;
-    /* padding: 0px 0px 0px 3.5rem ; */
-  }
-
-  body.srollRemove {
-    overflow: hidden;
-  }
-
-  #menu .top {
-    width: 100%;
-    list-style-type: none;
-    /* background-color: #7c2d12; */
-    padding: 1rem;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
-  }
-
-  #menu .top li {
-    font-weight: 500;
-    margin-top: 1rem;
-  }
-
-  #menu .top .topLi {
-    /* background-color: #212529; */
-    width: 100%;
-  }
-
-  #menu .top .topLi .logo {
-    width: 6rem;
-  }
-
-  #menu .top .topLi button {
-    background: none;
-    border: none;
-  }
-
-  #menu .top .topLi button .closeImg {
-    width: 1.3rem;
-  }
-
-  #menu .top .locationSetUp {
-    /* background-color: #634c9f; */
-    list-style-type: none;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 0.8rem;
-  }
-
-  #menu .top .locationSetUp .locationSetUpLi {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    /* background-color: burlywood; */
-  }
-
-  #menu .top .locationSetUp .locationSetUpLi .yourLocationSetUpText {
-    font-size: 0.8rem;
-    color: grey;
-  }
-
-  #menu .top .locationSetUp .locationSetUpLi .locationImg {
-  }
-
-  #menu .top .locationSetUp .locationSetUpLi .allLocation {
-  }
-
-  #menu .top .locationSetUp .changeText {
-    color: var(--main-color);
-    font-size: 0.8rem;
-    cursor: pointer;
-  }
-
-  .menu-bottom-border {
-    margin-top: 0.5rem;
-  }
-
-  /* middle */
-
-  #menu .middle {
-    padding: 1rem;
-    list-style-type: none;
-  }
-
-  #menu .middle h6 {
-    color: grey;
-    opacity: 0.3;
-    font-size: 0.8rem;
-    font-weight: 500;
-  }
-
-  #menu .middle li {
-    margin-top: 0.5rem;
-    font-weight: 300;
-    font-size: 0.9rem;
-  }
-
-  #menu .bottom {
-    padding: 1rem;
-    list-style-type: none;
-  }
-
-  /* bottom */
-
-  #menu .bottom {
-    /* background-color: #634c9f; */
-    padding: 1rem;
-  }
-
-  #menu .bottom h6 {
-    color: grey;
-    opacity: 0.3;
-    font-size: 0.8rem;
-    font-weight: 500;
-  }
-
-  #menu .bottom .callUl {
-    list-style-type: none;
-    display: flex;
-    margin-top: 1rem;
-  }
-
-  #menu .bottom .callUl li {
-  }
-
-  #menu .bottom .callUl li img {
-    width: 1.5rem;
-    margin-top: 0.5rem;
-  }
-
-  #menu .bottom .callUl .numberAndInfo {
-    margin-left: 1rem;
-  }
-
-  #menu .bottom .callUl .numberAndInfo p:nth-child(1) {
-    font-weight: 600;
-  }
-
-  #menu .bottom .callUl .numberAndInfo p:nth-child(2) {
-  }
-  #menu .bottom .exampleMailUl {
-    display: flex;
-    list-style-type: none;
-    margin-top: 1rem;
-  }
-
-  #menu .bottom .exampleMailUl li {
-  }
-
-  #menu .bottom .exampleMailUl li img {
-    width: 1.5rem;
-    margin-top: 0.5rem;
-  }
-
-  #menu .bottom .exampleMailUl .mailAndInfo {
-    margin-left: 1rem;
-  }
-
-  #menu .bottom .exampleMailUl .mailAndInfo p:nth-child(1) {
-    font-weight: 600;
-  }
-
-  #menu .bottom .exampleMailUl .mailAndInfo p:nth-child(2) {
-  }
-}
