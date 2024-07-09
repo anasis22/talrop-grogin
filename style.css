@@ -972,6 +972,10 @@ body{
   margin-top: 0.3rem;
 }
 
+#mainBody .right .showingResultsForMobile {
+ display: none;
+}
+
 /* Results */
 
 #mainBody .right .results {
@@ -1108,8 +1112,6 @@ body{
   height: 100%;
   list-style-type: none;
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
   flex-wrap: wrap;
   flex-direction: row;
   border-radius: 8px;
@@ -1826,8 +1828,6 @@ body{
   .otherProductsCard li {
     width: 50%;
   }
-
-
   
 }
 
