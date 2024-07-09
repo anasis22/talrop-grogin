@@ -172,13 +172,17 @@
         <!-- menu navbar -->
  
         <section id="ressearchBarAndLists" class="display">
-          <button>
+          <button id="menuBtn">
             <img src="./assets/menuBar.png" alt="menubar">
           </button>
           <button>
             <img class="logo" src="./assets/grogin-logo.png" alt="menubar">
           </button>
           <button>
+            <a href="#">
+              <img src="./assets/wishlist.png" alt="wishlist" />
+              <span class="wishListCountShow">0</span>
+            </a>
             <img src="./assets/cart.png" alt="menubar">
           </button>
         </section>
@@ -188,9 +192,10 @@
         <section id="menu">
           
           <ul class="top">
+
             <li class="topLi">
               <img class="logo" src="./assets/grogin-logo.png" alt="logo">
-              <button><img class="closeImg" src="./assets/close.png" alt="close"></button>
+              <button id="menuCloseBtn"><img class="closeImg" src="./assets/close.png" alt="close"></button>
             </li>
 
             <ul class="locationSetUp">
@@ -220,9 +225,40 @@
             <hr class="bottom-border menu-bottom-border" />
 
           </ul>
+
+          <ul class="middle">
+            <h6>GROGIN HELPERS</h6>
+            <li>Privacy Policy</li>
+            <li>Order Tracking</li>
+            <li>About Us</li>
+            <li>Contact</li>
+
+            <hr class="bottom-border menu-bottom-border" />
+          </ul>
+
+          <ul class="bottom">
+
+            <h6>CONTACT DETAILS</h6>
+
+            <ul class="callUl">
+              <li><img src="./assets/call.png" alt="call"></li>
+              <li class="numberAndInfo">
+                  <p>555-5555-5555</p>
+                  <p>you can call anytime from 9 am to 6 pm</p>
+              </li>
+            </ul>
+
+            <ul class="exampleMailUl">
+              <li><img src="./assets/share.png" alt="share"></li>
+              <li class="mailAndInfo">
+                  <p>example@example.com</p>
+                  <p>we will glad you assist you in the short time</p>
+              </li>
+            </ul>
+
+          </ul>
+    
         </section>
-
-
 
         <!--------  Widget Price Filter -------->
 
@@ -457,6 +493,44 @@
                     </a>
                   </li>
                 </ul>
+              </div>
+            </section>
+
+            <!-------- responsive showing result for mobile view ---------->
+
+            <section class="showingResultsForMobile">
+
+              <div class="showingResultsBox">
+
+                <div class="filterAndSortUl">
+
+                  <ul class="filterUl">
+                    <li>
+                      <button>
+                        <img src="./assets/filter.png" alt="filter">
+                        <p>Filter</p>
+                      </button>
+                    </li>
+                  </ul>
+
+                  <hr class="filterHr">
+
+                  <ul class="sortUl">
+                    <li>
+                      <button>
+                        <img src="./assets/sort.png" alt="filter">
+                        <p>Sort</p>
+                      </button>
+                    </li>
+                  </ul>
+
+                </div>
+
+                <ul class="rightSort">
+                  <li><img src="./assets/sortOne.png" alt="sortOne"></li>
+                  <li><img src="./assets/sortTwo.png" alt="sortTwo"></li>
+                </ul>
+               
               </div>
             </section>
 

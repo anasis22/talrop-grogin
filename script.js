@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let allProducts = []
     let filteredProducts;
     let wishListCount = 0;
-    const wishListCountShow = document.querySelector('.wishListCountShow')
+    const wishListCountShow = document.querySelectorAll('.wishListCountShow')
 
     async function fetchProducts() {
         try {
@@ -77,7 +77,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 if (rightImgTag.src.includes('heart.png')) {
                     rightImgTag.src = './assets/heartRed.png';
                     wishListCount += 1
-                    wishListCountShow.innerHTML = wishListCount
+                    // wishListCountShow.innerHTML = wishListCount
+                    wishListCountShow.forEach((el) => {
+                        el.innerHTML = wishListCount
+                    })
                 } else if (rightImgTag.src.includes('heartRed.png')) {
                     rightImgTag.src = './assets/heart.png';
                     wishListCount -= 1
@@ -209,28 +212,28 @@ document.addEventListener('DOMContentLoaded', function () {
         const countdownHours = document.querySelector('.countdownHours');
         const countdownMinutes = document.querySelector('.countdownMinutes');
         const countdownSeconds = document.querySelector('.countdownSeconds');
-        
+
         function updateCountdown() {
             const now = new Date().getTime();
             const distance = endDate - now;
-  
+
             if (distance < 0) {
                 clearInterval(interval);
                 countdownElement.innerHTML = "EXPIRED";
                 return;
             }
-  
+
             const days = Math.floor(distance / (1000 * 60 * 60 * 24));
             const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
             const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
             const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-  
+
             countdownDays.innerHTML = days;
             countdownHours.innerHTML = hours;
             countdownMinutes.innerHTML = minutes;
             countdownSeconds.innerHTML = seconds;
         }
-  
+
         const interval = setInterval(updateCountdown, 1000);
         updateCountdown();
     }
@@ -242,6 +245,44 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // ======== Responsives ===========
 
+const menuBtn = document.getElementById('menuBtn')
+const menu = document.getElementById('menu')
+const showingResults = document.querySelector('.showingResults')
+const showingResultsForMobile = document.querySelector('.showingResultsForMobile')
+console.log(showingResultsForMobile)
+const body = document.body
+
+const menuCloseBtn = document.getElementById('menuCloseBtn')
+
+
+menuBtn.addEventListener('click', () => {
+    menu.style.transform = "translateX(0%)"
+    menu.classList.add('bgChange')
+    body.classList.add('scrollRemove')
+    console.log(body)
+})
+
+menuCloseBtn.addEventListener('click', () => {
+    menu.style.transform = "translateX(-110%)"
+    body.classList.remove('scrollRemove')
+})
+
+//------ window Resizes -----
+
+
 window.addEventListener('resize',() => {
-    
+    const resize = window.innerWidth
+
+    // menu
+
+    if(resize < 950){
+      menu.style.display = 'block'
+      showingResults.style.display = 'none'
+      showingResultsForMobile.style.display = 'block'
+    }
+    if(resize > 950){
+      menu.style.display = 'none'
+      showingResults.style.display = 'block'
+      showingResultsForMobile.style.display = 'none'
+    }
 })
