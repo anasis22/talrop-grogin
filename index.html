@@ -260,6 +260,17 @@
     
         </section>
 
+        <!-- Search Box -->
+
+        <section id="searchBoxForMobile">
+          <div class="inputBox">
+            <input id="searchInputForMobile" type="text" placeholder="Search for products, categories or brands...">
+            <button>
+              <img src="./assets/search.png" alt="search">
+            </button>
+          </div>
+        </section>
+
         <!--------  Widget Price Filter -------->
 
         <section id="widgetPriceFilterHeading">
@@ -279,8 +290,10 @@
           </ul>
         </section>
 
+        <!------------ main body ----------->
+
         <section id="mainBody">
-          <section class="left">
+          <section id="filtering" class="left">
             <ul class="priceRanges">
               <li>
                 <p>Min price</p>
@@ -454,7 +467,7 @@
               </ul>
             </ul>
           </section>
-
+  
           <!-- Right side of the main body -->
 
           <section class="right">
@@ -506,7 +519,7 @@
 
                   <ul class="filterUl">
                     <li>
-                      <button>
+                      <button id="filterBtn">
                         <img src="./assets/filter.png" alt="filter">
                         <p>Filter</p>
                       </button>

@@ -156,7 +156,7 @@ body{
 }
 
 .bottom-border {
-  width: 100%;
+  width: 90%;
   height: 1px;
   background-color: var(--border-color);
   border: none;
@@ -219,6 +219,10 @@ body{
 
 #searchBarAndLists .midSearchInputBox input::placeholder {
   color: #6b7280;
+}
+
+#searchBarAndLists .midSearchInputBox button{
+  cursor: pointer;
 }
 
 #searchBarAndLists .midSearchInputBox img {
@@ -375,7 +379,7 @@ body{
   margin-left: 0.3rem;
 }
 
-/*-- for javascript --*/
+/*----- for javascript ----*/
 
 #navbar .left li a.active,
 #navbar .right li a.active {
@@ -972,9 +976,6 @@ body{
   margin-top: 0.3rem;
 }
 
-#mainBody .right .showingResultsForMobile {
- display: none;
-}
 
 /* Results */
 
@@ -1387,6 +1388,47 @@ body{
     display: none;
   }
 
+  /* --------------- Search Bar ------------- */
+
+  #searchBoxForMobile{
+    width: 90%;
+    margin-top: .5rem;
+  }
+
+  #searchBoxForMobile .inputBox{
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+  }
+
+  #searchBoxForMobile .inputBox input{
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: #f3f4f6;
+    padding: 0.5rem;
+    border-radius: 4px
+  }
+
+  #searchBoxForMobile .inputBox input::placeholder{
+    color: #6b7280;
+    font-size: .6rem;
+  }
+
+  #searchBoxForMobile .inputBox button{
+    position: absolute;
+    background: none;
+    border: none;
+    right: 1rem;
+    cursor: pointer;
+  }
+
+  #searchBoxForMobile .inputBox button img{
+   width: 1rem;
+  }
+
   /* ------------ Search Bar and Results --------------- */
 
   #ressearchBarAndLists {
@@ -1434,16 +1476,6 @@ body{
     display: none;
   }
 
-  /* ---------- main body left ---------- */
-
-  #mainBody .left {
-    display: none;
-  }
-
-  #mainBody .right {
-    width: 100%;
-    margin-left: 0px;
-  }
 
   /* ---------- Menu ----------- */
 
@@ -1647,7 +1679,64 @@ body{
     font-size: 0.7rem;
   }
 
+  /* ----------showing results ----------- */
 
+  #mainBody .right .showingResults{
+    display: none;
+  }
+
+
+  /* ---------- main body left and right ---------- */
+
+  #mainBody{
+    width: 100%;
+  }
+
+  #mainBody .right{
+    width: 90%;
+  }
+
+  #mainBody .left {
+    position: absolute;
+    transform: translateX(-600px);
+    transition: transform 0.5s ease;
+    height: 100%;
+  }
+
+  #mainBody .left hr{
+    display: none;
+  }
+  #mainBody .left hr:nth-child(4){
+    display: block;
+  }
+
+  #mainBody .left .filterByColor{
+    display: none;
+  }
+
+  #mainBody .left .filterByBrands{
+    display: none;
+  }
+
+  #mainBody .left .productStatus{
+    display: none;
+  }
+
+
+  #mainBody .forMobileViewFilteringOpen{
+    transform: translateX(0px);
+    left: 0px;
+    background-color: white;
+    top: 0px;
+    padding: 1rem;
+    width: 40%;
+
+  }
+
+  #mainBody .right{
+    margin-left: 0px;
+  }
+  
   /* ----------- showing results for mobile view ---------- */
 
   #mainBody .right .showingResultsForMobile {
@@ -1691,6 +1780,10 @@ body{
     display: flex;
     background: none;
     border: none;
+  }
+
+  #mainBody .right .showingResultsForMobile .showingResultsBox .filterAndSortUl .filterUl li button{
+    cursor: pointer;
   }
 
   #mainBody .right .showingResultsForMobile .showingResultsBox .filterAndSortUl .filterUl li button img,
@@ -1785,6 +1878,20 @@ body{
 
 /* ---------------------- */
 
+@media screen and (min-width: 950px) {
+  #mainBody .right .showingResultsForMobile{
+    display: none;
+  }
+
+  #searchBoxForMobile{
+   display: none;
+  }
+
+
+}
+
+
+
 @media screen and (max-width: 520px){
 
   /* ------ top discount bar -------- */
@@ -1814,6 +1921,12 @@ body{
 
   #ressearchBarAndLists button .logo{
     width: 5.5rem;
+  }
+
+  /* ------------- main body left ------------- */
+
+  #mainBody .forMobileViewFilteringOpen{
+    width: 70%;
   }
 
   /* ------- banner ------- */

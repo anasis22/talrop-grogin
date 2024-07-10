@@ -177,6 +177,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function filterProducts() {
         const searchInput = document.getElementById('searchInput').value.toLowerCase();
+        const searchInputForMobile = document.getElementById('searchInputForMobile').value.toLowerCase();
         const checkboxes = document.querySelectorAll('.productCategoriesCheckbox');
         const checkedCategories = Array.from(checkboxes)
             .filter(checkbox => checkbox.checked)
@@ -187,6 +188,9 @@ document.addEventListener('DOMContentLoaded', function () {
             filteredProducts = allProducts.filter(product => product.name !== 'Other Products');
             if (searchInput) {
                 filteredProducts = filteredProducts.filter(product => product.name.toLowerCase().includes(searchInput));
+            }
+            if(searchInputForMobile){
+                filteredProducts = filteredProducts.filter(product => product.name.toLowerCase().includes(searchInputForMobile));
             }
         } else {
             filteredProducts = allProducts.filter(product => product.name === 'Other Products');
@@ -203,7 +207,9 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     const searchInput = document.getElementById('searchInput');
+    const searchInputForMobile = document.getElementById('searchInputForMobile')
     searchInput.addEventListener('input', filterProducts);
+    searchInputForMobile.addEventListener('input', filterProducts);
 
     fetchProducts()
 
@@ -254,7 +260,6 @@ const body = document.body
 
 const menuCloseBtn = document.getElementById('menuCloseBtn')
 
-
 menuBtn.addEventListener('click', () => {
     menu.style.transform = "translateX(0%)"
     menu.classList.add('bgChange')
@@ -267,22 +272,21 @@ menuCloseBtn.addEventListener('click', () => {
     body.classList.remove('scrollRemove')
 })
 
+
+// filter opening
+
+const filterBtn = document.getElementById('filterBtn');
+const filtering = document.getElementById('filtering');
+
+filterBtn.addEventListener('click',() => {
+    filtering.classList.add('forMobileViewFilteringOpen')
+})
+
+
+
 //------ window Resizes -----
 
 
 window.addEventListener('resize',() => {
     const resize = window.innerWidth
-
-    // menu
-
-    if(resize < 950){
-      menu.style.display = 'block'
-      showingResults.style.display = 'none'
-      showingResultsForMobile.style.display = 'block'
-    }
-    if(resize > 950){
-      menu.style.display = 'none'
-      showingResults.style.display = 'block'
-      showingResultsForMobile.style.display = 'none'
-    }
 })
