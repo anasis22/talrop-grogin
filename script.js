@@ -84,7 +84,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 } else if (rightImgTag.src.includes('heartRed.png')) {
                     rightImgTag.src = './assets/heart.png';
                     wishListCount -= 1
-                    wishListCountShow.innerHTML = wishListCount
+                    wishListCountShow.forEach((el) => {
+                        el.innerHTML = wishListCount
+                    })
                 }
             })
 
@@ -189,7 +191,7 @@ document.addEventListener('DOMContentLoaded', function () {
             if (searchInput) {
                 filteredProducts = filteredProducts.filter(product => product.name.toLowerCase().includes(searchInput));
             }
-            if(searchInputForMobile){
+            if(searchInputForMobile) {
                 filteredProducts = filteredProducts.filter(product => product.name.toLowerCase().includes(searchInputForMobile));
             }
         } else {
@@ -273,13 +275,18 @@ menuCloseBtn.addEventListener('click', () => {
 })
 
 
-// filter opening
+// filter opening and close
 
 const filterBtn = document.getElementById('filterBtn');
 const filtering = document.getElementById('filtering');
+const filterCloseBtn = document.getElementById('filterCloseBtn')
 
 filterBtn.addEventListener('click',() => {
     filtering.classList.add('forMobileViewFilteringOpen')
+    filtering.classList.remove('forMobileViewFilteringClose')
+})
+filterCloseBtn.addEventListener('click',() => {
+    filtering.classList.add('forMobileViewFilteringClose')
 })
 
 

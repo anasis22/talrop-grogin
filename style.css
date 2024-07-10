@@ -457,6 +457,10 @@ body{
   margin-top: 1rem;
 }
 
+#mainBody .left #filterCloseBtn{
+  display: none;
+}
+
 #mainBody .left {
   width: 20%;
   display: flex;
@@ -1449,14 +1453,20 @@ body{
     margin-right: 1rem;
   }
 
+
   #ressearchBarAndLists button a .wishListCountShow {
     position: absolute;
     background: red;
-    padding: 4px 8px;
+    padding: 3px 6px;
     border-radius: 12px;
-    right: 0rem;
+    right: -4px;
     bottom: 14px;
-    font-size: 12px;
+    font-size: 8px;
+    color: white;
+  }
+
+  #ressearchBarAndLists button{
+    cursor: pointer;
   }
 
   #ressearchBarAndLists button img {
@@ -1521,6 +1531,7 @@ body{
   #menu .top .topLi button {
     background: none;
     border: none;
+    cursor: pointer;
   }
 
   #menu .top .topLi button .closeImg {
@@ -1687,6 +1698,7 @@ body{
 
   #mainBody{
     width: 100%;
+    margin-top: 0px;
   }
 
   #mainBody .right{
@@ -1719,6 +1731,20 @@ body{
     display: none;
   }
 
+  #mainBody .left #filterCloseBtn{
+    background: none;
+    border: none;
+    position: absolute;
+    top: 2rem;
+    right: 1.5rem;
+    cursor: pointer;
+    display: block;
+  }
+
+  #mainBody .left #filterCloseBtn img{
+    width: .8rem;
+  }
+
 
   #mainBody .forMobileViewFilteringOpen{
     transform: translateX(0px);
@@ -1727,7 +1753,11 @@ body{
     top: 0px;
     padding: 1rem;
     width: 40%;
+    height: 100vh;
+  }
 
+  #mainBody .forMobileViewFilteringClose{
+    transform: translateX(-600px)
   }
 
   #mainBody .right{
@@ -1884,6 +1914,14 @@ body{
    display: none;
   }
 
+  #mainbody .left {
+    display: none;
+  }
+
+  #menu{
+    display: none;
+  }
+
 
 }
 
@@ -1911,6 +1949,7 @@ body{
     width: 96%;
     padding: 0px .5rem;
   }
+
 
   #ressearchBarAndLists button img{
     width: 1.4rem;
