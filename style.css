@@ -1388,6 +1388,10 @@ body{
     margin-left: 1rem;
   }
 
+  #mainContainer .wrapper .navBottomBorderhr{
+    display: none;
+  }
+
   /* ---------- Top small nav ------------- */
 
   #topSmallNav {
@@ -2101,6 +2105,10 @@ body{
 /* ---------------------------- */
 @media screen and (min-width: 520px) {
   #footer .footerWrapper .footerMiddleForSmallScreen {
+    display: none;
+  }
+
+  #footer .footerWrapper .smallScreenFooterhr{
     display: none;
   }
 }
