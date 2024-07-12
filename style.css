@@ -1301,6 +1301,11 @@ body{
   margin-right: 1rem;
 }
 
+/* footer middle for small screen */
+
+
+
+
 /* footer bottom */
 
 #footer .footerWrapper .bottom {
@@ -1977,8 +1982,101 @@ body{
   .otherProductsCard li {
     width: 50%;
   }
+
+  /* footer middle */
+
+  #footer .footerWrapper .middle{
+    display: none;
+  } 
+
+  #footer .footerWrapper hr:nth-child(2){
+    display: none;
+  }
+
+  /* footer for small screens */
+
+  /* top section */
+
+  #footer .footerWrapper .footerMiddleForSmallScreen{
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  #footer .footerWrapper .footerMiddleForSmallScreen .topSec{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  #footer .footerWrapper .footerMiddleForSmallScreen .topSec ul{
+    list-style-type: none;
+  }
+
+  #footer .footerWrapper .footerMiddleForSmallScreen .topSec ul li{
+    margin-top: .4rem;
+  }
+  #footer .footerWrapper .footerMiddleForSmallScreen .topSec ul li h4{
+    color: #111827;
+    font-size: 0.7rem;
+  }
+
+  #footer .footerWrapper .footerMiddleForSmallScreen .topSec ul li p{
+    font-size: 0.7rem;
+    color: #4b5563;
+    cursor: pointer;
+  }
+  
+  /* bottom section */
+
+  #footer .footerWrapper .footerMiddleForSmallScreen .bottomSec{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 1rem;
+  }
+
+  #footer .footerWrapper .footerMiddleForSmallScreen .bottomSec ul{
+    list-style-type: none;
+  }
+
+  #footer .footerWrapper .footerMiddleForSmallScreen .bottomSec ul li{
+
+  }
+
+  #footer .footerWrapper .footerMiddleForSmallScreen .bottomSec ul li h4{
+    color: #111827;
+    font-size: 0.7rem;
+  }
+
+  #footer .footerWrapper .footerMiddleForSmallScreen .bottomSec ul .storeUl{
+    
+  }
+
+  #footer .footerWrapper .footerMiddleForSmallScreen .bottomSec ul .storeUl li{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin-top: .5rem;
+  }
+
+  #footer .footerWrapper .footerMiddleForSmallScreen .bottomSec ul .storeUl li img{
+    width: 4.5rem;
+  }
+
+  #footer .footerWrapper .footerMiddleForSmallScreen .bottomSec ul .storeUl li p{
+    font-size: 0.7rem;
+    color: #4b5563;
+    cursor: pointer;
+    text-align: center;
+  }
+
   
 }
 
 /* ---------------------------- */
+@media screen and (min-width: 520px) {
+  #footer .footerWrapper .footerMiddleForSmallScreen {
+    display: none;
+  }
+}
 
