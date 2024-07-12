@@ -1911,6 +1911,7 @@ body{
 
   #footer .footerWrapper .bottom .left li{
     font-size: 0.6rem;
+    text-align: center;
   }
 
   #footer .footerWrapper .bottom .left li:nth-child(2) {
@@ -1993,6 +1994,18 @@ body{
   .productCardLists,
   .otherProductsCard li {
     width: 50%;
+  }
+
+  /* footer top */
+
+  #footer .footerWrapper .top ul li h3{
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  #footer .footerWrapper .top ul li p{
+    text-align: center;
+    font-size: .6rem;
   }
 
   /* footer middle */
