@@ -1365,7 +1365,7 @@ body{
   }
 
   #mainContainer .wrapper .topDiscountBar p:nth-child(1){
-    font-size: .7rem;
+    font-size: .5rem;
   }
 
   #mainContainer .wrapper .topDiscountBar ul {
@@ -1373,7 +1373,7 @@ body{
   }
 
   #mainContainer .wrapper .topDiscountBar .endOfSaleTime li{
-    font-size: .7rem;
+    font-size: .5rem;
   }
 
   #mainContainer .wrapper .topDiscountBar .endOfSaleTime li span{
