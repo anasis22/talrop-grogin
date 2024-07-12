@@ -1364,8 +1364,20 @@ body{
     flex-direction: column;
   }
 
+  #mainContainer .wrapper .topDiscountBar p:nth-child(1){
+    font-size: .7rem;
+  }
+
   #mainContainer .wrapper .topDiscountBar ul {
     margin-top: 0.7rem;
+  }
+
+  #mainContainer .wrapper .topDiscountBar .endOfSaleTime li{
+    font-size: .7rem;
+  }
+
+  #mainContainer .wrapper .topDiscountBar .endOfSaleTime li span{
+    font-size: 1rem;
   }
 
   #mainContainer .wrapper .topDiscountBar ul li:nth-child(1) {
