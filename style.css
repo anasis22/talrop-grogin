@@ -1430,7 +1430,7 @@ body{
     outline: none;
     border: none;
     background-color: #f3f4f6;
-    padding: 0.5rem;
+    padding: 1rem;
     border-radius: 4px
   }
 
@@ -1790,7 +1790,7 @@ body{
   #mainBody .right .showingResultsForMobile {
     width: 100%;
     background-color: #f3f4f6;
-    padding: 0.5rem;
+    padding: .7rem;
     margin-top: .5rem;
     border-radius: 6px;
   }
@@ -1828,6 +1828,18 @@ body{
     display: flex;
     background: none;
     border: none;
+    
+  }
+
+  #mainBody .right .showingResultsForMobile .showingResultsBox .filterAndSortUl .filterUl li button{
+    background-color: #bdc1c7;
+    padding: .4rem;
+    border-radius: 4px;
+  }
+
+  #mainBody .right .showingResultsForMobile .showingResultsBox .filterAndSortUl .sortUl li button{
+    background-color: transparent;
+    padding: .4rem;
   }
 
   #mainBody .right .showingResultsForMobile .showingResultsBox .filterAndSortUl .filterUl li button{
@@ -1837,11 +1849,12 @@ body{
   #mainBody .right .showingResultsForMobile .showingResultsBox .filterAndSortUl .filterUl li button img,
   #mainBody .right .showingResultsForMobile .showingResultsBox .filterAndSortUl .sortUl li button img{ 
     width: .8rem;
+    margin-top: 2px;
   }
 
   #mainBody .right .showingResultsForMobile .showingResultsBox .filterAndSortUl .filterUl li button p,
   #mainBody .right .showingResultsForMobile .showingResultsBox .filterAndSortUl .sortUl li button p{ 
-    font-size: .6rem;
+    font-size: .8rem;
     margin-left: .2rem;
   }
 
